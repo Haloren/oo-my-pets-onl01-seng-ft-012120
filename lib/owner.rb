@@ -34,7 +34,7 @@ class Owner
   
   def cats 
     @cats = []
-    
+    Cat.all.each {|cat_1| cat_1.owner == self}
   end   
   
 end
