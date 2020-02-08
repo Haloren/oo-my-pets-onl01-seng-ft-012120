@@ -34,6 +34,7 @@ class Owner
   
   def cats 
     @cats = []
+    
   end   
   
 end
