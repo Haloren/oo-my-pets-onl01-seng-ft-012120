@@ -1,13 +1,13 @@
 class Dog
   
-  # attr_accessor :owner
-  # attr_reader :name
+  attr_accessor :owner
+  attr_reader :name
   
-  # @@all = [] 
+  @@all = [] 
   
-  # def initialize(name, owner)
-  #   @name = name
-  #   @owner = owner
-  # end   
+  def initialize(name, owner)
+    @name = name
+    @owner = owner
+  end   
     
 end
