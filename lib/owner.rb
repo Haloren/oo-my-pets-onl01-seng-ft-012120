@@ -1,14 +1,14 @@
 require 'pry' 
 
-@@all = []
-
 class Owner
   attr_reader :name, :species
+  
+@@all = []
   
   def initialize (name)
     @name = name
     @species = "human"
-    
+   
     save 
   end   
   
@@ -22,6 +22,14 @@ class Owner
   
   def save
     @@all << self 
+  end   
+  
+  def self.count
+    @@all.length 
+  end 
+  
+  def self.reset_all
+    @@all.clear  
   end   
   
 end
